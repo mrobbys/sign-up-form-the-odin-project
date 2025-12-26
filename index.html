@@ -25,17 +25,22 @@
       figcaption {
         font-family: "Norse", sans-serif;
       }
+      
+      #left{
+          background-image: url('images/leaf.jpg');
+      }
     </style>
 
     <!-- tailwind css-->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-zinc-200">
-      <!-- main start -->
+    <!-- main start -->
     <main class="mx-auto flex min-h-dvh w-full max-w-7xl justify-center">
-        <!-- left start -->
+      <!-- left start -->
       <div
-        class="hidden lg:block relative w-2xl bg-[url(/images/leaf.jpg)] bg-cover bg-center bg-no-repeat"
+        id="left"
+        class="relative hidden w-2xl bg-cover bg-center bg-no-repeat lg:block"
       >
         <figure
           class="absolute top-40 flex w-full items-center justify-center gap-2 bg-black/50 p-2"
@@ -61,9 +66,9 @@
         </p>
       </div>
       <!-- left end-->
-      
+
       <!-- right start -->
-      <div class="w-full my-12">
+      <div class="my-12 w-full">
         <div class="space-y-6 py-16 pr-20 pl-12 text-xl font-medium">
           <p>
             This is not a real online service! You know you need something like
@@ -76,7 +81,7 @@
         <form action="#">
           <div class="bg-zinc-100 py-6 pr-20 pl-12 shadow-md">
             <h3 class="text-2xl font-medium">Let's do this!</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-20 py-8">
+            <div class="grid grid-cols-1 gap-6 py-8 md:grid-cols-2 md:gap-20">
               <div class="space-y-6">
                 <div>
                   <label
@@ -161,14 +166,17 @@
               </div>
             </div>
           </div>
-          <div class="py-8 pr-20 pl-12 space-y-8">
+          <div class="space-y-8 py-8 pr-20 pl-12">
             <button
               type="submit"
               class="cursor-pointer rounded-lg bg-[#596D48] px-10 py-3 font-medium text-zinc-100 shadow-lg"
             >
               Create Account
             </button>
-            <p>Already have an account? <a href="#" class="text-[#596D48] font-semibold">Log in</a></p>
+            <p>
+              Already have an account?
+              <a href="#" class="font-semibold text-[#596D48]">Log in</a>
+            </p>
           </div>
         </form>
         <!-- form end -->
